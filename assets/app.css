@@ -1,0 +1,63 @@
+body {
+  background-color: #00cfc5;
+  font-family: "Bai Jamjuree";
+  font-size: 1.5em;
+}
+
+.page-hero {
+  background-image: url("/assets/landing-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.form-text {
+  color: #1e5a55;
+}
+
+.signature-field {
+  outline: #ced4da dashed 4px;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  overflow: hidden;
+  background-image: url("/assets/signature-bg.png");
+  background-position: center;
+  user-select: none;
+}
+
+.signature-field.is-valid {
+  outline: #198754 solid 4px;
+}
+
+.signature-cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.signature-toolbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.signature-toolbar .btn-outline-warning,
+.signature-toolbar .btn-outline-danger {
+  width: 64px;
+}
+
+.signature-pad {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
