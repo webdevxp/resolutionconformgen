@@ -115,6 +115,10 @@ ol li::before {
   color: white;
 }
 
-a:any-link {
+a:any-link:not(.btn) {
   color: #00827C;
+}
+
+.btn {
+  border-radius: 8px;
 }
