@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
 body {
   background-color: #00cfc5;
   font-family: "Bai Jamjuree";
-  font-size: 1.5em;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
 }
 
 .page-hero {
@@ -60,4 +78,43 @@ body {
   left: -9999px;
   right: -9999px;
   margin: auto;
+}
+
+.intro-box {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgb(0, 0, 0, 0.2);
+}
+
+ol>li, ul>li {
+  margin-bottom: 1rem;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  padding-left: 0;
+}
+
+ol li {
+  display: flex;
+  counter-increment: my-awesome-counter;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  background-color: #00CFC5;
+  font-weight: bold;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  text-align: center;
+  margin-right: 16px;
+  display: block;
+  color: white;
+}
+
+a:any-link {
+  color: #00827C;
 }
